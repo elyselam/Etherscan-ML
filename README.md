@@ -2,8 +2,10 @@
 Made by Elyse Lam for the USC Viterbi Data Science Bootcamp
 Elyse.p.lam@gmail.com
 
-## Adapted from py-etherscan-api module by https://github.com/corpetty/
+Adapted from py-etherscan-api module by https://github.com/corpetty/
 
+pip install etherscan-ml
+wget https://tinyurl.com/etherscan-ml
 
 Original py-etherscan-api was a well built scaffolding for python 
 scripts using the Etherscan API. The examples were so easy to work with 
