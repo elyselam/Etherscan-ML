@@ -12,7 +12,7 @@ def main():
 
     if len(sys.argv) < 2:
     	print("usage: " + os.path.basename(__file__) + " Smart Contract Address")
-	print("Smart Contracts can be found on ERC20 token pages and where they are used")
+    	print("Smart Contracts can be found on ERC20 token pages and where they are used")
     	sys.exit(1)
     else:
     	wallet_addy = str(sys.argv[1])

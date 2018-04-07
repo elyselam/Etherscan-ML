@@ -1,4 +1,4 @@
-/api_key.json
+# /api_key.json
 # Created by .ignore support plugin (hsz.mobi)
 ### IPythonNotebook template
 # Temporary data
@@ -163,3 +163,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+,gitignore

@@ -1,12 +1,12 @@
 from distutils.core import setup
 
 setup(
-    name='Etherscan Magic for Machine Learning and Bash',
+    name='Etherscan ML',
     version='0.1',
     packages=['wallet-tools', 'erc20-tools', 'ether-tools','etherscan'],
-    url='https://github.com/elyselam/machine_learning_etherscan',
+    url='https://github.com/elyselam/Etherscan-ML',
     license='MIT',
-    author='elyse lam source:coreypetty', 
+    author='elyse lam', 
     author_email='Elyse.p.Lam@gmail.com',
     description='Machine Learning Library for Etherscan'
 )

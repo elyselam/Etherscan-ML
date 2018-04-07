@@ -11,8 +11,8 @@ def main():
 
     if len(sys.argv) < 2:
     	 print("usage: " + os.path.basename(__file__) + " user_wallet erc_20_contract_address")
-   	 print("Find an ether wallet address. Whales can be found in the token holders section")
-   	 sys.exit(1)
+    	 print("Find an ether wallet address. Whales can be found in the token holders section")
+    	 sys.exit(1)
     elif len(sys.argv) < 3:
     	print("usage: " + os.path.basename(__file__) + " user_wallet ERC20_CONTRACT_ADDRESS") 
     	print("Find the ERC20 contract address. Click the token name in token transactions.")
