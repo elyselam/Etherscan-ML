@@ -1,5 +1,7 @@
 # etherscan magic - machine learning and bash module 
 Made by Elyse Lam for the USC Viterbi Data Science Bootcamp
+Elyse.p.lam@gmail.com
+
 ## Adapted from py-etherscan-api module by https://github.com/corpetty/
 
 
@@ -84,8 +86,3 @@ Jupyter notebooks area also included in each directory to show all examples
 - Add unit test suite
 - Add request throttling based on Etherscan's suggestions
 
-
-## Holla at ya' boy
-BTC: 16Ny72US78VEjL5GUinSAavDwARb8dXWKG
-
-ETH: 0x5E8047fc033499BD5d8C463ADb29f10f11165ed0
