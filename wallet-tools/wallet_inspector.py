@@ -12,7 +12,7 @@ def main():
 
     if len(sys.argv) < 3:
     	print("usage: " + os.path.basename(__file__) + " user_wallet contract_address")
-    	print("Exchange Hunter. Find the token transactions of a wallet for a token.")
+    	print("Find the token transactions of a wallet for a token.")
     	sys.exit(1)
     else:
 

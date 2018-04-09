@@ -10,7 +10,7 @@ class Client(object):
     MODULE = 'module='
     ACTION = '&action='
     CONTRACT_ADDRESS = '&contractaddress='
-    TRANSACTION_ADDRESS ='generic-tokentxns2?contractAddress'
+    TRANSACTION_ADDRESS ='generic-tokentxns2?contractAddress='
     ADDRESS = '&address='
     OFFSET = '&offset='
     PAGE = '&page='

@@ -1,41 +1,52 @@
-# etherscan magic - machine learning and bash module 
+# Etherscan ML Machine Learning, Data Processing and Bash module 
 Made by Elyse Lam for the USC Viterbi Data Science Bootcamp
 Elyse.p.lam@gmail.com
 
 Adapted from py-etherscan-api module by https://github.com/corpetty/
 
-pip install etherscan-ml
-wget https://tinyurl.com/etherscan-ml
-
-Original py-etherscan-api was a well built scaffolding for python 
-scripts using the Etherscan API. The examples were so easy to work with 
-I created a very basic command line interface and a couple new tools and 
-decided to package them so you can integrate etherscan into your bash or 
-python scripts as an input or output.
-
-Directories have been restructured to fit the tools better. I pipe 
-different wallet-tools into csvs for training or call them based on 
-triggers from bash scripts. Suggestions and requests welcome.
-
-All file names are optimized for tab completion and designed to 
-integrate into other programs as piped input or output.
-
+pip install etherscan-ml <br />
+wget https://tinyurl.com/etherscan-ml <br />
+MACOSX:  brew install gnu-sed <br />
+<br />
 ## wallet-tools
-
-ether_balance.py - Ether balance of a wallet.
-wallet_inspector.py - Experimental..discovered an undocumented API gets all transactions without paging issue get_all_transactions had. Requires additional formatting.
+<br /><br />
+<b>ether_balance.py</b> - Ether balance of a wallet.
+<br /><br />
+<b>wallet_inspector.py</b> - Experimental..discovered an undocumented API gets all transactions without paging issue get_all_transactions had. Requires additional formatting.
 transaction_batch.py - Gets all of the 1st page transactions for a wallet. 
-
+<br /><br />
 ## erc20-tools
-
-get_abi.py - Gets the abi of a smart contract. Fails for non-smart contracts. TODO: integrate with testing library
-get_token_balance.py - Gets the token balance of a wallet address.
+<br /><br />
+<b>get_abi.py</b> - Gets the abi of a smart contract. Fails for non-smart contracts. TODO: integrate with token test automation libraries
+<br /><br />
+<b>get_token_balance.py</b> - Gets the token balance of a wallet address. Useful to connect with data pulled from all_transactions.py
+<br /><br />
+<b>all_transactions.py</b>- Used to get all transactions for a Token. Must install gnu-sed (brew install gnu-sed) on Mac. Linux change gsed in fix_batch.sh to sed Python 3 only. Takes at least 20 mins to pull every transaction a token has ever had.
+		      Usage: python3.6 all_transactions.py <token address> > tokenname.preprocessed
+		      (after completion): ./fix_batch.sh tokenname.preprocessed
+		      (if you need a csv): python3.6 convert-wallet.py <tokenname.json>
+		      Testing: run ./fix_batch.sh medtoken.preprocessed for test data
+		      Notes: ERC20 Transfers are buried inside of the data in the input field. 
+		      This line works for a google sheets import of the CSV but I am working on a better tool. 
+		      ="0x"&LEFT(RIGHT($M4, 104), 40)   M is the location of input, and 4 is the row. The rest is charcount stripping.
+<br />
 
 ## ether-tools
-get_ether_last_price.py - Does as its name indicates.
-get_total_ether_supply.py - Same.
+<br />
+<b>get_ether_last_price.py</b> - Gets latest price.
+<br /><br />
+<b>get_total_ether_supply.py</b> - Gets total available ether in Ethereum Network.
+<br />
 
+Original py-etherscan-api was a well built scaffolding for python
+scripts using the Etherscan API. The examples were so easy to work with
+I created a very basic command line interface and a couple new tools and
+decided to package them so you can integrate etherscan into your bash or
+python scripts as an input or output.
 
+Directories have been restructured to fit the tools better. I pipe
+different wallet-tools into csvs for training or call them based on
+triggers from bash scripts. Suggestions and requests welcome.
 
 # Original Documentation Below:
 

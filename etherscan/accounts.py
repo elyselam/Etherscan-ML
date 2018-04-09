@@ -84,10 +84,13 @@ class Account(Client):
             else:
                 trans_list += req['result']
                 # Find any character block that is a integer of any length
+                print(req['result'])
                 page_number = re.findall(r'[1-9](?:\d{0,2})(?:,\d{3})*(?:\.\d*[1-9])?|0?\.\d*[1-9]|0', self.url_dict[self.PAGE])
-                print("page {} added".format(page_number[0]))
+#                print("page {} added".format(page_number[0]))
+                time.sleep(random.randint(0, 1))
                 time.sleep(random.randint(0, 1))
                 self.url_dict[self.PAGE] = str(int(page_number[0]) + 1)
+
 
     def get_blocks_mined_page(self, blocktype='blocks', page=1, offset=10000) -> list:
         """
