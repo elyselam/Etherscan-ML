@@ -22,13 +22,13 @@ transaction_batch.py - Gets all of the 1st page transactions for a wallet.
 <b>get_token_balance.py</b> - Gets the token balance of a wallet address. Useful to connect with data pulled from all_transactions.py
 <br /><br />
 <b>all_transactions.py</b>- Used to get all transactions for a Token. Must install gnu-sed (brew install gnu-sed) on Mac. Linux change gsed in fix_batch.sh to sed Python 3 only. Takes at least 20 mins to pull every transaction a token has ever had.
-<br />		      Usage: python3.6 all_transactions.py <token address> > tokenname.preprocessed
-<br />		      (after completion): ./fix_batch.sh tokenname.preprocessed
-<br />		      (if you need a csv): python3.6 convert-wallet.py <tokenname.json>
-<br />		      Testing: run ./fix_batch.sh medtoken.preprocessed for test data
-<br />		      Notes: ERC20 Transfers are buried inside of the data in the input field. 
-<br />		      This line works for a google sheets import of the CSV but I am working on a better tool. 
-<br />		      ="0x"&LEFT(RIGHT($M4, 104), 40)   M is the location of input, and 4 is the row. The rest is charcount stripping.
+<br />			<b>Usage:</b> python3.6 all_transactions.py <token address> > tokenname.preprocessed
+<br />			<b>(after completion):</b> ./fix_batch.sh tokenname.preprocessed
+<br />			<b>(if you need a csv):</b> python3.6 convert-wallet.py <tokenname.json>
+<br />			<b>Testing:</b> run ./fix_batch.sh medtoken.preprocessed for test data
+<br />			<b>Notes:</b> ERC20 Transfers are buried inside of the data in the input field. 
+<br />			This line works for a google sheets import of the CSV but I am working on a better tool. 
+<br />			="0x"&LEFT(RIGHT($M4, 104), 40)   M is the location of input, and 4 is the row. The rest is charcount stripping.
 <br />
 
 ## ether-tools
