@@ -1,4 +1,5 @@
 # Etherscan ML Machine Learning, Data Processing and Bash module 
+This is an ongoing project.
 Made by Elyse Lam for the USC Viterbi Data Science Bootcamp
 Elyse.p.lam@gmail.com
 
