@@ -8,7 +8,7 @@ pip install etherscan-ml <br />
 wget https://tinyurl.com/etherscan-ml <br />
 MACOSX:  brew install gnu-sed <br />
 <br />
-Scrape Etherscan then use Gephi to visualize network of transactions
+# Scrape Etherscan then use Gephi to visualize network of transactions
 
 <img src="/Network Analysis/EOS_network.png"
      alt="Markdown Monster icon"
