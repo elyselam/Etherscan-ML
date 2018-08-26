@@ -9,6 +9,11 @@ pip install etherscan-ml <br />
 wget https://tinyurl.com/etherscan-ml <br />
 MACOSX:  brew install gnu-sed <br />
 <br />
+Scrape Etherscan then use Gephi to visualize network of transactions
+![alt text](Network Analysis/EOS_.pdf.jpg)
+
+
+<br />
 ## wallet-tools
 <br /><br />
 <b>ether_balance.py</b> - Ether balance of a wallet.
