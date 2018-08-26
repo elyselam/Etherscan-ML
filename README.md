@@ -1,7 +1,6 @@
 # Etherscan ML Machine Learning, Data Processing and Bash module 
 This is an ongoing project.
 Made by Elyse Lam for the USC Viterbi Data Science Bootcamp
-Elyse.p.lam@gmail.com
 
 Adapted from py-etherscan-api module by https://github.com/corpetty/
 
@@ -10,13 +9,11 @@ wget https://tinyurl.com/etherscan-ml <br />
 MACOSX:  brew install gnu-sed <br />
 <br />
 Scrape Etherscan then use Gephi to visualize network of transactions
-!(/"/Network Analysis/EOS_.pdf")
+
 <img src="/Network Analysis/EOS_network.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
-
-!
 
 <br />
 ## wallet-tools
